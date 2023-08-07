@@ -4,8 +4,34 @@ import java.util.*;
 
 public class Solution {
     public static void main(String[] args) {
-        System.out.println("h");
+        System.out.println(Arrays.toString(productExceptSelf(new int[]{-1,  - 1})));
     }
+
+
+    public static int[] productExceptSelf(int[] nums) {
+        //O(n)
+
+        int n = nums.length;
+        int ans[] = new int[n];
+        Arrays.fill(ans, 1);
+        int curr = 1;
+        for(int i = 0; i < n; i++) {
+            ans[i] *= curr;
+            curr *= nums[i];
+        }
+        curr = 1;
+        for(int i = n - 1; i >= 0; i--) {
+            ans[i] *= curr;
+            curr *= nums[i];
+        }
+        return ans;
+    }
+
+
+
+
+
+
 
     public boolean containsDuplicate(int[] nums) {
 
