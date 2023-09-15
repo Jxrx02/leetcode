@@ -1,0 +1,11 @@
+
+{	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(óéÂ¨þÿÿÿÿ8Èºã“¢1
+
+java:S4165"bRemove this useless assignment; "nums" already holds the assigned value along all execution paths.(Ì»Ù¹8Èºã“¢1
+Z	java:S106	"9Replace this use of System.out or System.err by a logger.(º³î¢ýÿÿÿÿ8×ºã“¢1
+]	java:S125
+"<This block of commented-out lines of code should be removed.(„Ð‡öüÿÿÿÿ8Îšñ“¢1
+O
+java:S1128"-Remove this unused import 'java.util.Arrays'.(î–˜Éüÿÿÿÿ8×ºã“¢1
+P
+java:S1128".Remove this unused import 'java.util.HashMap'.(™˜”€ùÿÿÿÿ8×ºã“¢1
