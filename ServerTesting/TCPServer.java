@@ -7,7 +7,7 @@ public class TCPServer {
   public static void main(String[] args) {
     try {
       ServerSocket serverSocket = new ServerSocket(12345); // Portnummer hier anpassen
-      System.out.println("Server wartet auf Verbindung...");
+      System.out.println("Server wartet auf Verbindung... ");
 
       Socket clientSocket = serverSocket.accept();
       System.out.println("Verbindung hergestellt mit: " + clientSocket.getInetAddress().getHostAddress());

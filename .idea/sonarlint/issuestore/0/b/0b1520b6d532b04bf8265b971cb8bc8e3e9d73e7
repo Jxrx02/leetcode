@@ -5,8 +5,8 @@ java:S16044"(Make this anonymous inner class a lambda(Çƒ›8¶Á¸—¢1
 e
 java:S2259="CA "NullPointerException" could be thrown; "nodes" is nullable here.(ÅıÓúÿÿÿÿ8³£Ï—¢1
 ]	java:S1257"<This block of commented-out lines of code should be removed.(¸‰£Úüÿÿÿÿ8›şÆ—¢1
-Z	java:S106G"9Replace this use of System.out or System.err by a logger.(’Ç•“ûÿÿÿÿ8ÊÁ¸—¢1
-Z	java:S106H"9Replace this use of System.out or System.err by a logger.(¡Ü“Æúÿÿÿÿ8ÊÁ¸—¢1
-Z	java:S106I"9Replace this use of System.out or System.err by a logger.(Î§ãûüÿÿÿÿ8ÊÁ¸—¢1
-U	java:S106J"9Replace this use of System.out or System.err by a logger.(Ò±ĞÉ8ÊÁ¸—¢1
-Z	java:S106K"9Replace this use of System.out or System.err by a logger.(—¿§Şıÿÿÿÿ8ÊÁ¸—¢1
+L	java:S106G"+Replace this use of System.out by a logger.(’Ç•“ûÿÿÿÿ8ÊÁ¸—¢1
+L	java:S106H"+Replace this use of System.out by a logger.(¡Ü“Æúÿÿÿÿ8ÊÁ¸—¢1
+L	java:S106I"+Replace this use of System.out by a logger.(Î§ãûüÿÿÿÿ8ÊÁ¸—¢1
+G	java:S106J"+Replace this use of System.out by a logger.(Ò±ĞÉ8ÊÁ¸—¢1
+L	java:S106K"+Replace this use of System.out by a logger.(—¿§Şıÿÿÿÿ8ÊÁ¸—¢1
