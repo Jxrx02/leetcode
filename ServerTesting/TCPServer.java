@@ -7,7 +7,7 @@ public class TCPServer {
   public static void main(String[] args) {
     try {
       ServerSocket serverSocket = new ServerSocket(12345); // Portnummer hier anpassen
-      System.out.println("Server wartet auf Verbindung...");
+      System.out.println("Server IP: " + getPublicIPv6() + " Port: " + serverSocket.getLocalPort() + "\n" + "Warte auf Verbindung...");
 
       Socket clientSocket = serverSocket.accept();
       System.out.println("Verbindung hergestellt mit: " + clientSocket.getInetAddress().getHostAddress());
@@ -27,6 +27,27 @@ public class TCPServer {
       serverSocket.close();
     } catch (IOException e) {
       e.printStackTrace();
+    }
+  }
+
+  public static String getPublicIPv6() throws IOException {
+    URL url = new URL("https://ipv6.icanhazip.com/");
+    HttpURLConnection httpURLConnection = (HttpURLConnection) url.openConnection();
+
+    try {
+      // Lesen Sie die Antwort von der Website
+      BufferedReader reader = new BufferedReader(new InputStreamReader(httpURLConnection.getInputStream()));
+      String line;
+      StringBuilder response = new StringBuilder();
+
+      while ((line = reader.readLine()) != null) {
+        response.append(line);
+      }
+
+      // Die Antwort von ipv6.icanhazip.com enthält die IPv6-Adresse
+      return response.toString().trim();
+    } finally {
+      httpURLConnection.disconnect();
     }
   }
 }
